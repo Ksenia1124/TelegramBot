@@ -18,7 +18,6 @@ namespace Bot
             DataBase = JsonConvert.DeserializeObject<Dictionary<string, string>>(Data);
 
             var Api = new TelegramAPI();
-            //Api.sendMessage("Yo sobaki, Im Naruto Uzumaki", 219793136);
             while(true)
             {
                 var updates = Api.getUpdates();
